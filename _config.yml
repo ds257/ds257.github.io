@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Yiyang Ling
+name: Diya Saraf
 
 # Short bio or description (displayed in the header)
 # description: the profile of an engineer, researcher and software developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/avatar-lyy.png
+avatar: images/ds257.png
 
 #
 # Flags below are optional
@@ -18,10 +18,10 @@ avatar: images/avatar-lyy.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: lyy38706@sjtu.edu.cn
+  email: diyasaraf2001@gmail.com
   facebook:
   flickr:
-  github: yiyang0207
+  github: ds257
   instagram: 
   linkedin:
   pinterest:
@@ -42,7 +42,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: "https://yiyang0207.github.io" # the base hostname & protocol for your site
+url: "https://ds257.github.io" # the base hostname & protocol for your site
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
