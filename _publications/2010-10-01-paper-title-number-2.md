@@ -2,7 +2,7 @@
 title: "The Impact of Emojis on User Engagement with Trolling Content in an Online Platform"
 collection: publications
 category: conferences
-permalink: /publication/2024-emoji-engagement
+permalink: /publication/2010-10-01-paper-title-number-2.md
 excerpt: "Analysis of how emoji usage modulates engagement with trolling content."
 date: 2024-01-01
 venue: "IEEE Digital Platforms and Societal Harms (DPSH)"
