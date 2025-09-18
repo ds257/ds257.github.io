@@ -2,7 +2,7 @@
 title: "Large-scale detection of multilingual coordinated activity on Telegram"
 collection: publications
 category: manuscripts
-permalink: /publication/2025-telegram-coordination
+permalink: /publication/2009-10-01-paper-title-number-1.md
 excerpt: "Scaling cross-language coordination detection on Telegram using similarity graphs and propagation timing."
 date: 2025-06-01
 venue: "In Review Nature Journal"
