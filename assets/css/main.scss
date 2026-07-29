@@ -44,3 +44,8 @@
   border-radius: 0;      /* square */
   max-width: 240px;
 }
+.author__avatar img {
+  border-radius: 0;
+  max-width: 240px !important;
+  width: 240px !important;
+}
