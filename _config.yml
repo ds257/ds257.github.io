@@ -24,10 +24,10 @@ author:
   # Biographic information
   avatar           : "diya257.png"
   name             : "Diya Saraf"
-  pronouns         : # example: "she/her"  
+  pronouns         : "she/her"  
   bio              : ""
-  location         : "Los Angeles, California"
-  employer         : "USC"
+  location         : ""
+  employer         : "Johns Hopkins"
   uri              : # URL
   email            : "diyasaraf2001@gmail.com" 
 
