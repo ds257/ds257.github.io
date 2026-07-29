@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Diya Saraf"
 title_separator          : "-"
 name                     : &name "Diya Saraf"
-description              : &description "MS CS student at USC"
+description              : &description "PhD Student at Johns Hopkins University"
 url                      : "https://ds257.github.io"
 baseurl                  : #"/ds7.github.io"
 repository               : "ds257/ds257.github.io"
@@ -52,7 +52,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : # Replace this with you Bluesky username
+  bluesky          : # 
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
