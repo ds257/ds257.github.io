@@ -1,0 +1,18 @@
+# Add new papers at the top. Fields: title, authors, venue, selected (y/n),
+# and any of: paper_pdf, slides, poster, video, code, data, bibtex.
+# Local files go under /assets/publications/<slug>/ ; external links use full URLs.
+
+papers:
+
+  - title: "Large-scale Detection of Multilingual Coordinated Activity on Telegram"
+    authors: "Leonardo Blas, <b>Diya Saraf<sup>‡</sup></b>, Tanishq Salkar<sup>‡</sup>, Nora Adadurova, Luca Luceri, Emilio Ferrara"
+    venue: "npj Complexity, vol. 2, 33. 2025."
+    paper_pdf: "https://www.nature.com/articles/s44260-025-00056-w"
+    code: "https://github.com/leonardo-blas/usc-tg-24-us-election"
+    selected: y
+
+  - title: "The Impact of Emojis on User Engagement with Trolling Content in Online Platforms"
+    authors: "<b>Diya Saraf</b>, Yuhong Liu, Hooria Jazaieri"
+    venue: "IEEE DPSH'24: Digital Platforms and Societal Harms. 2024."
+    paper_pdf: "https://scholarcommons.scu.edu/cseng_senior/300/"
+    selected: y

@@ -1,0 +1,34 @@
+# category: "work" renders on the left of the timeline, anything else on the right.
+# NOTE: double-check the years below — a few are best guesses.
+
+experiences:
+
+- place: "Johns Hopkins University"
+  time: "2025 - now"
+  title: "Ph.D. Student, Computer Science"
+  subtitle: "Social Computing Group — advised by Tiziano Piccardi"
+  category: "school"
+
+- place: "USC Information Sciences Institute"
+  time: "2024 - 2025"
+  title: "Graduate Research Assistant"
+  subtitle: "HUMANS Lab — with Emilio Ferrara and Luca Luceri"
+  category: "work"
+
+- place: "University of Southern California"
+  time: "2024 - 2025"
+  title: "M.S., Computer Science"
+  subtitle: "Viterbi School of Engineering"
+  category: "school"
+
+- place: "Dell Technologies"
+  time: "Summer 2023"
+  title: "Software Engineering Intern"
+  subtitle: "CI/CD automation and encryption infrastructure"
+  category: "work"
+
+- place: "Santa Clara University"
+  time: "2020 - 2024"
+  title: "B.S., Computer Science & Engineering"
+  subtitle: "Minor in Mathematics — Clare Boothe Luce Scholar<br/>Undergraduate research advised by Yuhong Liu"
+  category: "school"

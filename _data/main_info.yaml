@@ -1,0 +1,14 @@
+name: "Diya Saraf"
+title: "Ph.D. Student, Computer Science, Johns Hopkins University"
+email: "dsaraf2 [AT] jhu.edu"
+profile_pic: "/assets/profile-pics/profile.jpg"
+
+# Leave a value blank to hide that icon in the header/footer.
+github: "https://github.com/ds257"
+linkedin: "https://www.linkedin.com/in/diyasaraf"
+google_scholar: "https://scholar.google.com/citations?user=8sdzReQAAAAJ&hl=en"
+twitter: ""
+bsky: ""
+
+# Leave blank to disable analytics.
+google_analytics_tracking_id: ""

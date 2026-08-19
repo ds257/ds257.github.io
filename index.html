@@ -1,0 +1,144 @@
+---
+layout: default
+title: Home
+---
+
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+  My research studies the gap between what people <b>say</b> they want to see online and what recommendation
+  algorithms <b>learn</b> they engage with &mdash; and what that gap means for the design of social platforms.
+  I work on <b>algorithmic auditing</b>, <b>recommender systems and personalization</b>, and <b>computational
+  social science</b>, combining large-scale observational data, controlled audits, and field studies with
+  instrumented data collection. Recent work has looked at coordinated influence operations
+  [<a href="https://www.nature.com/articles/s44260-025-00056-w" target="_blank" rel="noopener">npj Complexity'25</a>]
+  and engagement dynamics around harmful content
+  [<a href="https://scholarcommons.scu.edu/cseng_senior/300/" target="_blank" rel="noopener">DPSH'24</a>].
+  </p>
+
+  <p>
+  I'm a Ph.D. student in Computer Science at Johns Hopkins University, where I'm part of the
+  <b>Social Computing group</b> advised by
+  <a href="https://piccardi.me/" target="_blank" rel="noopener">Tiziano Piccardi</a>.
+  Before Hopkins, I completed an M.S. in Computer Science at the University of Southern California,
+  where I worked in the <b>HUMANS Lab</b> at the Information Sciences Institute with
+  <a href="https://www.emilio.ferrara.name/" target="_blank" rel="noopener">Emilio Ferrara</a> and
+  <a href="https://www.luceriluc.it/" target="_blank" rel="noopener">Luca Luceri</a> on coordinated
+  inauthentic behavior, algorithmic amplification, and audits of YouTube and TikTok recommendations.
+  I received my B.S. in Computer Science &amp; Engineering with a minor in Mathematics from Santa Clara
+  University, where I was a <b>Clare Boothe Luce Scholar</b> advised by
+  <a href="https://www.scu.edu/engineering/faculty/liu-yuhong/" target="_blank" rel="noopener">Yuhong Liu</a>.
+  I've also spent time in industry as a software engineering intern at Dell Technologies.
+  </p>
+
+  <p>
+  I'm broadly interested in industry research internships at the intersection of machine learning and
+  social systems &mdash; in <b>responsible AI</b>, <b>integrity and trust &amp; safety</b>,
+  <b>recommender systems</b>, and <b>computational social science</b>. Feel free to reach out.
+  </p>
+</div>
+
+<!-- ========== RESEARCH ========== -->
+<div class="docs-section" id="research">
+  <h4>Research</h4>
+
+  <div class="research-item">
+    <p class="title"><b>Stated vs. revealed preferences in social media feeds</b></p>
+    <p>
+    Comparing LLM-verbalized preference summaries against embedding-based representations for predicting
+    which posts a user will actually engage with, and measuring where the two diverge.
+    </p>
+  </div>
+
+  <div class="research-item">
+    <p class="title"><b>Auditing knowledge platforms at scale</b></p>
+    <p>
+    Systematically comparing coverage and framing across knowledge platforms &mdash; for example Grokipedia
+    against Wikipedia &mdash; to surface structural differences in what gets documented and how.
+    </p>
+  </div>
+
+  <div class="research-item">
+    <p class="title"><b>Instrumented feed data collection</b></p>
+    <p>
+    Building browser-based tooling that collects real, consented feed data from study participants,
+    enabling field experiments on live recommendation systems rather than simulated ones.
+    </p>
+  </div>
+
+  <p class="research-interests">
+  <b>Interests:</b> computational social science &middot; algorithmic auditing &amp; accountability &middot;
+  recommender systems &amp; personalization &middot; LLMs and NLP for modeling user behavior &middot;
+  human&ndash;AI interaction &middot; network science &middot; trust &amp; safety &middot;
+  responsible and human-centered AI
+  </p>
+</div>
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on
+  <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        {% include paper.html paper=paper %}
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        {% include paper.html paper=paper %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- ========== VITA ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vit&aelig;</h4>
+
+  <!-- Drop your CV at assets/cv/cv.pdf and uncomment the line below.
+  <p>Full CV in <a href="{{ '/assets/cv/cv.pdf' | prepend: site.baseurl }}" target="_blank">PDF</a>.</p>
+  -->
+
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- ========== OUTSIDE RESEARCH ========== -->
+<div class="docs-section" id="outside">
+  <h4>Outside Research</h4>
+  <p>
+  I like <b>data storytelling</b> and <b>media history</b> &mdash; old arguments about radio and cable
+  tend to make today's platform debates look less novel than advertised. Otherwise: mountains whenever
+  the calendar allows, and a daily word puzzle before breakfast.
+  </p>
+</div>
+
