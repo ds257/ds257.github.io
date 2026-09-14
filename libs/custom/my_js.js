@@ -24,6 +24,51 @@ $(document).ready(function() {
     $document.on('click', closePopover)
     $('a[href^="#"]').on('click', smoothScroll)
     buildSnippets();
+    initToggles();
+    initBlogFilter();
+  }
+
+  function initToggles() {
+    // Generic text/section toggles: [data-toggle="#id"] shows/hides #id and flips its own label.
+    $('.text-toggle').on('click', function() {
+      var $btn = $(this);
+      var target = $($btn.data('toggle'));
+      var isOpen = target.toggleClass('open').hasClass('open');
+      $btn.text(isOpen ? 'Full bio \u2191' : 'Full bio \u2193');
+    });
+
+    // Research item expanders.
+    $('.research-toggle').on('click', function() {
+      var $btn = $(this);
+      var target = $($btn.data('toggle'));
+      var isOpen = target.toggleClass('open').hasClass('open');
+      $btn.attr('aria-expanded', isOpen);
+    });
+  }
+
+  function initBlogFilter() {
+    var $chips = $('.chip-filter .chip'),
+        $cards = $('.post-list .post-card[data-categories]');
+
+    if ($chips.length === 0) { return; }
+
+    $chips.on('click', function() {
+      var $chip = $(this),
+          filter = $chip.data('filter');
+
+      $chips.removeClass('active');
+      $chip.addClass('active');
+
+      $cards.each(function() {
+        var $card = $(this),
+            cats = ' ' + ($card.data('categories') || '') + ' ';
+        if (filter === 'all' || cats.indexOf(' ' + filter + ' ') !== -1) {
+          $card.removeClass('hidden');
+        } else {
+          $card.addClass('hidden');
+        }
+      });
+    });
   }
 
   function smoothScroll(e) {

@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="docs-section" id="blog-index">
+  <h4>Blog</h4>
+  <p class="section-subtitle">
+  Mostly two things: notes on applying to CS PhD programs, and running routes around wherever I've
+  lived &mdash; currently the Bay Area and greater LA, plus wherever else I end up.
+  </p>
+
+  <div class="chip-filter" data-filter-group="blog">
+    <button class="chip active" data-filter="all">All</button>
+    {% assign all_cats = "" | split: "" %}
+    {% for post in site.posts %}
+      {% for cat in post.categories %}
+        {% assign all_cats = all_cats | push: cat %}
+      {% endfor %}
+    {% endfor %}
+    {% assign uniq_cats = all_cats | uniq | sort %}
+    {% for cat in uniq_cats %}
+    <button class="chip" data-filter="{{ cat }}">{{ cat }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="post-list">
+    {% for post in site.posts %}
+    <a class="post-card" href="{{ post.url | prepend: site.baseurl }}"
+       data-categories="{{ post.categories | join: ' ' }}">
+      <div class="post-card-meta">
+        <span class="post-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% for cat in post.categories %}
+        <span class="pill pill-cat">{{ cat }}</span>
+        {% endfor %}
+      </div>
+      <p class="post-card-title">{{ post.title }}</p>
+      <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>

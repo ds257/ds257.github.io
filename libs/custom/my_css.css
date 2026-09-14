@@ -11,12 +11,14 @@ h4 {
 .main-description p {
   margin-bottom: 0px; }
 .profile-pic {
-  border-radius: 3px; }
+  border-radius: 3px;
+  width: 190px;
+  max-width: 100%; }
 
 /* Keep the photo a sensible size when the header stacks on phones */
 @media (max-width: 549px) {
   .profile-pic {
-    max-width: 170px;
+    max-width: 200px;
     margin-bottom: 15px; }
 }
 
@@ -51,11 +53,187 @@ h4 {
   line-height: 25px;
   text-transform: none; }
 
+/* Internship callout */
+#internships.docs-section {
+  border-top: none;
+  padding-top: 0;
+  padding-bottom: 2rem; }
+.callout {
+  background: #f7f7f5;
+  border-left: 3px solid #333;
+  padding: 1.6rem 2rem;
+  border-radius: 2px; }
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 10px; }
+.callout-list {
+  margin-bottom: 14px;
+  padding-left: 20px; }
+.callout-list li {
+  margin-bottom: 4px; }
+.button-link {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #333; }
+.button-link:hover {
+  color: #33C3F0;
+  border-color: #33C3F0; }
+
+/* TL;DR / tags / collapsibles */
+.tldr {
+  margin-bottom: 12px; }
+.tag-row {
+  margin-bottom: 14px; }
+.pill {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 3px 11px;
+  margin: 0 6px 6px 0;
+  border-radius: 12px;
+  background: #eef0ee;
+  color: #333; }
+.pill-muted {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: rgba(0,0,0,0.6); }
+.pill-cat {
+  background: #e3edf7;
+  color: #2a5a82;
+  text-transform: capitalize; }
+.text-toggle, .research-toggle, .chip {
+  cursor: pointer;
+  font-family: inherit; }
+.text-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: rgba(0,0,0,0.55);
+  text-decoration: underline;
+  margin-bottom: 4px; }
+.text-toggle:hover {
+  color: #33C3F0; }
+.collapsible {
+  display: none;
+  margin-top: 14px; }
+.collapsible.open {
+  display: block; }
+
+/* Section subtitle */
+.section-subtitle {
+  color: rgba(0,0,0,0.6);
+  margin-bottom: 18px; }
+
 /* Research items */
 .research-item {
-  margin-bottom: 22px; }
-.research-item p {
+  margin-bottom: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 14px; }
+.research-item:last-of-type {
+  border-bottom: none; }
+.research-toggle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 4px 0; }
+.research-toggle .title {
+  font-weight: 600;
+  flex: 1; }
+.research-toggle .status {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: rgba(0,0,0,0.5);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1px 8px;
+  margin-right: 10px; }
+.research-toggle .chevron {
+  color: rgba(0,0,0,0.4);
+  transition: transform .15s ease;
+  margin-left: 8px; }
+.research-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(180deg); }
+.research-summary {
+  margin: 4px 0 0 0;
+  color: rgba(0,0,0,0.65); }
+.research-interests-row {
+  margin-top: 24px; }
+
+/* Blog */
+.chip-filter {
+  margin-bottom: 20px; }
+.chip {
+  display: inline-block;
+  background: none;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 14px;
+  padding: 4px 14px;
+  margin: 0 8px 8px 0;
+  font-size: 1.2rem;
+  text-transform: capitalize; }
+.chip.active {
+  background: #333;
+  border-color: #333;
+  color: #fff; }
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; }
+.post-card {
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .15s ease, background .15s ease; }
+.post-card:hover {
+  border-color: #33C3F0;
+  background: #fafcff; }
+.post-card-meta {
+  margin-bottom: 6px; }
+.post-card-date {
+  font-size: 1.1rem;
+  color: rgba(0,0,0,0.5);
+  margin-right: 10px; }
+.post-card-title {
+  font-weight: 600;
+  font-size: 1.6rem;
   margin-bottom: 4px; }
+.post-card-excerpt {
+  color: rgba(0,0,0,0.65);
+  margin-bottom: 0; }
+.post-card.hidden {
+  display: none; }
+
+/* Post page */
+.post-meta {
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 6px; }
+.post-title {
+  margin-bottom: 10px; }
+.post-dek {
+  color: rgba(0,0,0,0.65);
+  font-size: 1.6rem;
+  margin-bottom: 24px; }
+.post-content {
+  margin-bottom: 24px; }
+.post-content h2 {
+  margin-top: 32px; }
+.back-link {
+  display: inline-block;
+  color: rgba(0,0,0,0.55);
+  text-decoration: none;
+  margin: 8px 0; }
+.back-link:hover {
+  color: #33C3F0; }
 .research-interests {
   color: rgba(0, 0, 0, 0.65);
   font-size: 1.4rem;

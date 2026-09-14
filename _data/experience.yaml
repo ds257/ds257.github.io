@@ -4,27 +4,27 @@
 experiences:
 
 - place: "Johns Hopkins University"
-  time: "2025 - now"
+  time: "2026 - now"
   title: "Ph.D. Student, Computer Science"
   subtitle: "Social Computing Group — advised by Tiziano Piccardi"
   category: "school"
 
 - place: "USC Information Sciences Institute"
-  time: "2024 - 2025"
+  time: "2024 - 2026"
   title: "Graduate Research Assistant"
   subtitle: "HUMANS Lab — with Emilio Ferrara and Luca Luceri"
   category: "work"
 
 - place: "University of Southern California"
-  time: "2024 - 2025"
+  time: "2024 - 2026"
   title: "M.S., Computer Science"
   subtitle: "Viterbi School of Engineering"
   category: "school"
 
 - place: "Dell Technologies"
-  time: "Summer 2023"
+  time: "Summer 2023,2024"
   title: "Software Engineering Intern"
-  subtitle: "CI/CD automation and encryption infrastructure"
+  subtitle: "CI/CD automation, encryption infrastructure"
   category: "work"
 
 - place: "Santa Clara University"

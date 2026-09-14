@@ -6,6 +6,15 @@ destination: ./_site
 baseurl: ""
 url: "https://ds257.github.io"
 
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 exclude:
   - README.md
   - Gemfile

@@ -6,37 +6,65 @@ title: Home
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
-  <p>
-  My research studies the gap between what people <b>say</b> they want to see online and what recommendation
-  algorithms <b>learn</b> they engage with &mdash; and what that gap means for the design of social platforms.
-  I work on <b>algorithmic auditing</b>, <b>recommender systems and personalization</b>, and <b>computational
-  social science</b>, combining large-scale observational data, controlled audits, and field studies with
-  instrumented data collection. Recent work has looked at coordinated influence operations
-  [<a href="https://www.nature.com/articles/s44260-025-00056-w" target="_blank" rel="noopener">npj Complexity'25</a>]
-  and engagement dynamics around harmful content
-  [<a href="https://scholarcommons.scu.edu/cseng_senior/300/" target="_blank" rel="noopener">DPSH'24</a>].
+
+  <p class="tldr">
+  Ph.D. student in CS at Johns Hopkins, studying the gap between what people <b>say</b> they want online
+  and what recommenders <b>learn</b> they engage with. Previously M.S. at USC/ISI (coordinated
+  inauthentic behavior, algorithmic amplification); B.S. at Santa Clara University.
   </p>
 
-  <p>
-  I'm a Ph.D. student in Computer Science at Johns Hopkins University, where I'm part of the
-  <b>Social Computing group</b> advised by
-  <a href="https://piccardi.me/" target="_blank" rel="noopener">Tiziano Piccardi</a>.
-  Before Hopkins, I completed an M.S. in Computer Science at the University of Southern California,
-  where I worked in the <b>HUMANS Lab</b> at the Information Sciences Institute with
-  <a href="https://www.emilio.ferrara.name/" target="_blank" rel="noopener">Emilio Ferrara</a> and
-  <a href="https://www.luceriluc.it/" target="_blank" rel="noopener">Luca Luceri</a> on coordinated
-  inauthentic behavior, algorithmic amplification, and audits of YouTube and TikTok recommendations.
-  I received my B.S. in Computer Science &amp; Engineering with a minor in Mathematics from Santa Clara
-  University, where I was a <b>Clare Boothe Luce Scholar</b> advised by
-  <a href="https://www.scu.edu/engineering/faculty/liu-yuhong/" target="_blank" rel="noopener">Yuhong Liu</a>.
-  I've also spent time in industry as a software engineering intern at Dell Technologies.
-  </p>
+  <div class="tag-row">
+    <span class="pill">Algorithmic auditing</span>
+    <span class="pill">Recommender systems</span>
+    <span class="pill">Computational social science</span>
+    <span class="pill">Trust &amp; safety</span>
+  </div>
 
-  <p>
-  I'm broadly interested in industry research internships at the intersection of machine learning and
-  social systems &mdash; in <b>responsible AI</b>, <b>integrity and trust &amp; safety</b>,
-  <b>recommender systems</b>, and <b>computational social science</b>. Feel free to reach out.
-  </p>
+  <button class="text-toggle" data-toggle="#bio-full">Full bio &darr;</button>
+
+  <div class="collapsible" id="bio-full">
+    <p>
+    My research studies the gap between what people <b>say</b> they want to see online and what
+    recommendation algorithms <b>learn</b> they engage with &mdash; and what that gap means for the
+    design of social platforms. I work on <b>algorithmic auditing</b>, <b>recommender systems and
+    personalization</b>, and <b>computational social science</b>, combining large-scale observational
+    data, controlled audits, and field studies with instrumented data collection. Recent work has looked
+    at coordinated influence operations
+    [<a href="https://www.nature.com/articles/s44260-025-00056-w" target="_blank" rel="noopener">npj Complexity'25</a>]
+    and engagement dynamics around harmful content
+    [<a href="https://scholarcommons.scu.edu/cseng_senior/300/" target="_blank" rel="noopener">DPSH'24</a>].
+    </p>
+
+    <p>
+    I'm a Ph.D. student in Computer Science at Johns Hopkins University, where I'm part of the
+    <b>Social Computing group</b> advised by
+    <a href="https://piccardi.me/" target="_blank" rel="noopener">Tiziano Piccardi</a>.
+    Before Hopkins, I completed an M.S. in Computer Science at the University of Southern California,
+    where I worked in the <b>HUMANS Lab</b> at the Information Sciences Institute with
+    <a href="https://www.emilio.ferrara.name/" target="_blank" rel="noopener">Emilio Ferrara</a> and
+    <a href="https://www.luceriluc.it/" target="_blank" rel="noopener">Luca Luceri</a> on coordinated
+    inauthentic behavior, algorithmic amplification, and audits of YouTube and TikTok recommendations.
+    I received my B.S. in Computer Science &amp; Engineering with a minor in Mathematics from Santa Clara
+    University, where I was a <b>Clare Boothe Luce Scholar</b> advised by
+    <a href="https://www.scu.edu/engineering/faculty/liu-yuhong/" target="_blank" rel="noopener">Yuhong Liu</a>.
+    I've also spent time in industry as a software engineering intern at Dell Technologies.
+    </p>
+  </div>
+</div>
+
+<!-- ========== INTERNSHIP CALLOUT ========== -->
+<div class="docs-section" id="internships">
+  <div class="callout">
+    <p class="callout-title">Looking for Summer 2027 research internships</p>
+    <ul class="callout-list">
+      <li>Multimodal LLMs detecting regulated-product content on TikTok at scale &mdash;
+          <a href="#publications">publications &darr;</a></li>
+      <li>LLM-verbalized user preference profiles vs. embedding-based personalization &mdash;
+          <a href="#research">research &darr;</a></li>
+      <li>Interested in: responsible AI &middot; trust &amp; safety &middot; recommender systems &middot; CSS</li>
+    </ul>
+    <a class="button-link" href="mailto:dsaraf2@jhu.edu">Get in touch &rarr;</a>
+  </div>
 </div>
 
 <!-- ========== RESEARCH ========== -->
@@ -44,35 +72,86 @@ title: Home
   <h4>Research</h4>
 
   <div class="research-item">
-    <p class="title"><b>Stated vs. revealed preferences in social media feeds</b></p>
-    <p>
-    Comparing LLM-verbalized preference summaries against embedding-based representations for predicting
-    which posts a user will actually engage with, and measuring where the two diverge.
+    <button class="research-toggle" data-toggle="#res-1">
+      <span class="title">Stated vs. revealed preferences in social media feeds</span>
+      <span class="status">ongoing</span>
+      <span class="chevron">&darr;</span>
+    </button>
+    <p class="research-summary">
+    LLM-verbalized preference profiles beat embedding retrieval at predicting what a user actually
+    engages with &mdash; and stay human-editable.
     </p>
+    <div class="collapsible" id="res-1">
+      <p>
+      Building and evaluating short, editable LLM-verbalized preference profiles against a user's
+      held-out likes, and comparing them to embedding-based retrieval baselines for predicting future
+      engagement. Across several rounds of prompt iteration and controls (permutation baselines,
+      profile-swap tests, temporal train/test splits), verbalized profiles consistently outperform
+      embedding centroids at matched recall &mdash; while staying human-readable and directly editable
+      by the user, unlike a learned embedding.
+      </p>
+    </div>
   </div>
 
   <div class="research-item">
-    <p class="title"><b>Auditing knowledge platforms at scale</b></p>
-    <p>
-    Systematically comparing coverage and framing across knowledge platforms &mdash; for example Grokipedia
-    against Wikipedia &mdash; to surface structural differences in what gets documented and how.
+    <button class="research-toggle" data-toggle="#res-2">
+      <span class="title">Multimodal surveillance of regulated content on social platforms</span>
+      <span class="chevron">&darr;</span>
+    </button>
+    <p class="research-summary">
+    Multimodal LLMs detecting nicotine-pouch and similar regulated-product content on TikTok at scale.
     </p>
+    <div class="collapsible" id="res-2">
+      <p>
+      Using multimodal LLMs to detect and characterize regulated-product content &mdash; e.g. nicotine
+      pouches &mdash; on TikTok at scale, extending computer-vision-based tobacco surveillance methods to
+      handle video, caption, and on-screen text jointly (see Publications).
+      </p>
+    </div>
   </div>
 
   <div class="research-item">
-    <p class="title"><b>Instrumented feed data collection</b></p>
-    <p>
-    Building browser-based tooling that collects real, consented feed data from study participants,
-    enabling field experiments on live recommendation systems rather than simulated ones.
+    <button class="research-toggle" data-toggle="#res-3">
+      <span class="title">Auditing knowledge platforms at scale</span>
+      <span class="chevron">&darr;</span>
+    </button>
+    <p class="research-summary">
+    Comparing coverage and framing across knowledge platforms, e.g. Grokipedia vs. Wikipedia.
     </p>
+    <div class="collapsible" id="res-3">
+      <p>
+      Systematically comparing coverage and framing across knowledge platforms &mdash; for example
+      Grokipedia against Wikipedia &mdash; to surface structural differences in what gets documented and
+      how.
+      </p>
+    </div>
   </div>
 
-  <p class="research-interests">
-  <b>Interests:</b> computational social science &middot; algorithmic auditing &amp; accountability &middot;
-  recommender systems &amp; personalization &middot; LLMs and NLP for modeling user behavior &middot;
-  human&ndash;AI interaction &middot; network science &middot; trust &amp; safety &middot;
-  responsible and human-centered AI
-  </p>
+  <div class="research-item">
+    <button class="research-toggle" data-toggle="#res-4">
+      <span class="title">Instrumented feed data collection</span>
+      <span class="chevron">&darr;</span>
+    </button>
+    <p class="research-summary">
+    Browser-based tooling for collecting real, consented feed data for field experiments.
+    </p>
+    <div class="collapsible" id="res-4">
+      <p>
+      Building browser-based tooling that collects real, consented feed data from study participants,
+      enabling field experiments on live recommendation systems rather than simulated ones.
+      </p>
+    </div>
+  </div>
+
+  <div class="tag-row research-interests-row">
+    <span class="pill pill-muted">Computational social science</span>
+    <span class="pill pill-muted">Algorithmic auditing</span>
+    <span class="pill pill-muted">Recommender systems</span>
+    <span class="pill pill-muted">LLMs / NLP for user behavior</span>
+    <span class="pill pill-muted">Human&ndash;AI interaction</span>
+    <span class="pill pill-muted">Network science</span>
+    <span class="pill pill-muted">Trust &amp; safety</span>
+  </div>
 </div>
 
 <!-- ========== PUBLICATIONS ========== -->
@@ -132,11 +211,34 @@ title: Home
   </ul>
 </div>
 
+<!-- ========== BLOG PREVIEW ========== -->
+<div class="docs-section" id="blog-preview">
+  <h4>Blog</h4>
+  <p class="section-subtitle">Notes on PhD applications, and running routes around the Bay Area and LA. <a href="{{ '/blog.html' | prepend: site.baseurl }}">All posts &rarr;</a></p>
+
+  <div class="post-list">
+    {% for post in site.posts limit: 2 %}
+    <a class="post-card" href="{{ post.url | prepend: site.baseurl }}">
+      <div class="post-card-meta">
+        <span class="post-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% for cat in post.categories %}
+        <span class="pill pill-cat">{{ cat }}</span>
+        {% endfor %}
+      </div>
+      <p class="post-card-title">{{ post.title }}</p>
+      <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
 <!-- ========== OUTSIDE RESEARCH ========== -->
 <div class="docs-section" id="outside">
   <h4>Outside Research</h4>
-  <p>
- I watch a lot of crime documentaries, which is less of a departure from the day job than it sounds — both come down to working out which parts of a story are true and which are just well-told. Otherwise: happiest in the mountains, and usually a word puzzle open on my phone.
-  </p>
+  <div class="tag-row">
+    <span class="pill">Crime documentaries</span>
+    <span class="pill">Mountains</span>
+    <span class="pill">Word puzzles</span>
+    <span class="pill">Running &mdash; <a href="{{ '/blog.html' | prepend: site.baseurl }}">routes on the blog</a></span>
+  </div>
 </div>
-

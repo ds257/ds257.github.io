@@ -4,6 +4,11 @@
 
 papers:
 
+  - title: "Scaling Surveillance of Nicotine Pouch Content on TikTok Using Multimodal Large Language Models"
+    authors: "Artur Galimov, Luca Luceri, Reid C. Whaley, <b>Diya Saraf</b>, David Chu, Fred Morstatter, Yolanda Gil, Adam M. Leventhal, Jennifer B. Unger"
+    venue: "Manuscript submitted for publication. 2026."
+    selected: y
+
   - title: "Large-scale Detection of Multilingual Coordinated Activity on Telegram"
     authors: "Leonardo Blas, <b>Diya Saraf<sup>‡</sup></b>, Tanishq Salkar<sup>‡</sup>, Nora Adadurova, Luca Luceri, Emilio Ferrara"
     venue: "npj Complexity, vol. 2, 33. 2025."
