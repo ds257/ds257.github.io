@@ -6,14 +6,15 @@ destination: ./_site
 baseurl: ""
 url: "https://ds257.github.io"
 
-permalink: /blog/:title/
-
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      # Scoped to posts only (not the global `permalink:` key) so it
+      # doesn't also rewrite blog.html and other pages into folder/index.html.
+      permalink: "/blog/:title/"
 
 exclude:
   - README.md

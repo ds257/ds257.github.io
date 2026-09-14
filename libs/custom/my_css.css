@@ -1,5 +1,10 @@
 h4 {
   letter-spacing: .1rem; }
+body {
+  font-family: "IBM Plex Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600; }
 .container {
   max-width: 800px; }
 .header {
@@ -212,6 +217,56 @@ h4 {
   margin-bottom: 0; }
 .post-card.hidden {
   display: none; }
+
+/* Vita */
+.vita-timeline {
+  list-style: none;
+  margin: 0 0 0 6px;
+  padding: 0;
+  border-left: 2px solid #e8e8e6; }
+.vita-item {
+  position: relative;
+  padding: 0 0 26px 26px; }
+.vita-item:last-child {
+  padding-bottom: 0; }
+.vita-dot {
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #33C3F0;
+  border: 2px solid #fff; }
+.vita-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 2px; }
+.vita-place {
+  font-weight: 700;
+  font-size: 1.5rem; }
+.vita-time {
+  color: rgba(0,0,0,0.5);
+  font-size: 1.2rem;
+  margin-left: auto; }
+.vita-tag {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: 1px 8px;
+  border-radius: 9px;
+  border: 1px solid #ddd;
+  color: rgba(0,0,0,0.55); }
+.vita-tag-school {
+  background: #eef0ee; }
+.vita-tag-work {
+  background: #e3edf7;
+  border-color: #cfe0ee; }
+.vita-desc {
+  color: #444;
+  font-size: 1.35rem; }
 
 /* Post page */
 .post-meta {
